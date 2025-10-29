@@ -6,7 +6,7 @@ import { FaWhatsapp, FaInstagram, FaTelegram, FaEnvelope } from 'react-icons/fa'
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function WhereToBuy() {
+export default function ContactUs() {
   const containerRef = useRef(null);
 
   useEffect(() => {

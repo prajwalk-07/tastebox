@@ -1,9 +1,9 @@
 import Footer from '../components/Footer';
-import WhereToBuy from "../components/ContactUs";
-import Reviews from "../components/Reviews";
 import Hero from '@/components/Hero';
 import Gallery from '@/components/Gallery';
 import RealSustainableCards from '@/components/RealSustainableCards';
+import WhyTasteBox from '@/components/WhyTasteBox';
+import FAQs from '@/components/FAQs';
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -18,11 +18,11 @@ export default function Home() {
  
     
 
-<Reviews/>
+{/* <Reviews/> */}
 <RealSustainableCards/>
-    <WhereToBuy />
+<WhyTasteBox/>
+<FAQs/>
       </main>
-      <Footer />
     </div>
   );
 }

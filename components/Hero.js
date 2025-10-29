@@ -31,13 +31,14 @@ export default function Hero() {
     });
   }, []);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length);
-  };
+  // Auto-advance timer (4 seconds)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 4000);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
-  };
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -66,13 +67,13 @@ export default function Hero() {
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex justify-center items-center w-full"
+              className="flex-shrink-0 flex justify-center items-center w-full mt-5"
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                width={1400}   // Laptop size
-                height={788}   // 16:9 ratio
+                width={1400}
+                height={788}
                 priority={index === 0}
                 className="w-full max-w-[1600px] h-auto object-contain"
                 sizes="(max-width: 900px) 100vw,
@@ -84,19 +85,19 @@ export default function Hero() {
         </div>
 
         {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
+        {/* <button
+          onClick={() => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)}
           className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-black p-3 rounded-full transition-colors duration-300 shadow-lg"
         >
           <ArrowLeft size={24} />
         </button>
 
         <button
-          onClick={nextSlide}
+          onClick={() => setCurrentSlide((prev) => (prev + 1) % images.length)}
           className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-black p-3 rounded-full transition-colors duration-300 shadow-lg"
         >
           <ArrowRight size={24} />
-        </button>
+        </button> */}
 
         {/* Slide Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2">

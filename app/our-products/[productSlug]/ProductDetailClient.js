@@ -57,7 +57,7 @@ export default function ProductDetailClient({ product }) {
         {/* Back Button */}
         <div className="animate-section mb-8">
           <Link href="/our-products">
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors duration-300 text-sm md:text-base">
+            <button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors duration-300 text-sm md:text-base mt-5">
               ← Back to Products
             </button>
           </Link>
