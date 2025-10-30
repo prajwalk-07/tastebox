@@ -5,7 +5,9 @@
 .clip-slant-horizontal {
   clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
 }
-
+html, body {
+  overflow-x: hidden;
+}
 
 @theme inline {
   --color-background: var(--background);

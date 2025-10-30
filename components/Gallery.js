@@ -93,7 +93,7 @@ export default function Gallery() {
   return (
     <div
       ref={containerRef}
-      className="w-full px-4 py-4 bg-white pt-5 lg:h-140 mb-10"
+      className="w-full px-4 py-4 bg-white pt-5 lg:h-140 mb-10 "
       id="gallery"
     >
       {/* Header */}

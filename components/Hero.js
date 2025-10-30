@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,20 +53,20 @@ export default function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="relative w-full h-auto overflow-hidden bg-black"
+      className="relative w-full h-auto overflow-hidden bg-black touch-pan-y overscroll-x-contain"
     >
       {/* Slider Container */}
       <div className="relative w-full h-full overflow-hidden flex items-center justify-center">
         {/* Slider Track */}
         <div
           ref={sliderRef}
-          className="flex transition-transform duration-500"
+          className="flex transition-transform duration-500 will-change-transform touch-pan-y"
           style={{ width: `${images.length * 100}%` }}
         >
           {images.map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 flex justify-center items-center w-full mt-5"
+              className="flex-shrink-0 basis-full flex justify-center items-center w-full mt-5 select-none"
             >
               <Image
                 src={image.src}
@@ -83,21 +82,6 @@ export default function Hero() {
             </div>
           ))}
         </div>
-
-        {/* Navigation Arrows */}
-        {/* <button
-          onClick={() => setCurrentSlide((prev) => (prev - 1 + images.length) % images.length)}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-black p-3 rounded-full transition-colors duration-300 shadow-lg"
-        >
-          <ArrowLeft size={24} />
-        </button>
-
-        <button
-          onClick={() => setCurrentSlide((prev) => (prev + 1) % images.length)}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-black p-3 rounded-full transition-colors duration-300 shadow-lg"
-        >
-          <ArrowRight size={24} />
-        </button> */}
 
         {/* Slide Indicators */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
