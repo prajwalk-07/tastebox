@@ -126,17 +126,17 @@ export default function ContactUs() {
           <div className="section-animate bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
               <FaUtensils className="text-3xl text-amber-700 mr-4" />
-              <h3 className="text-2xl font-bold text-amber-800">General & Trade Enquiries</h3>
+              <h3 className="text-2xl font-bold text-[#cf240a]">General & Trade Enquiries</h3>
             </div>
             
             <div className="contact-items space-y-4">
               <div className="contact-item flex items-center">
                 <FaEnvelope className="text-xl text-amber-700 mr-4" />
                 <div>
-                  <p className="text-gray-600">Email</p>
+                  <p className="text-black">Email</p>
                   <a 
                     href="mailto:tasteboxtheflavourofhome@gmail.com"
-                    className="text-amber-800 hover:text-amber-900 font-medium"
+                    className="text-[#cf240a] hover:text-[#cf240a] font-medium"
                   >
                     tasteboxtheflavourofhome@gmail.com
                   </a>
@@ -146,10 +146,10 @@ export default function ContactUs() {
               <div className="contact-item flex items-center">
                 <FaPhone className="text-xl text-amber-700 mr-4" />
                 <div>
-                  <p className="text-gray-600">Phone</p>
+                  <p className="text-black">Phone</p>
                   <a 
                     href="tel:+91 9110697312"
-                    className="text-amber-800 hover:text-amber-900 font-medium"
+                    className="text-[#cf240a] hover:text-[#cf240a] font-medium"
                   >
                     +91 9110697312
                   </a>
@@ -162,10 +162,10 @@ export default function ContactUs() {
           <div className="section-animate bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
             <div className="flex items-center mb-6">
               <FaInstagram className="text-3xl text-amber-700 mr-4" />
-              <h3 className="text-2xl font-bold text-amber-800">Follow Our Journey</h3>
+              <h3 className="text-2xl font-bold text-[#cf240a]">Follow Our Journey</h3>
             </div>
             
-            <p className="text-gray-700 mb-6">
+            <p className="text-black mb-6">
               Stay connected with us for new product launches, delicious
               recipes, and special offers!
             </p>
@@ -173,45 +173,45 @@ export default function ContactUs() {
             <div className="social-links-container grid grid-cols-2 gap-4">
               <a
                 href="https://instagram.com/tastebox"
-                className="social-link bg-amber-50 hover:bg-amber-200 text-amber-900 p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
+                className="social-link bg-amber-50 hover:bg-amber-200 text-[#cf240a] p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ opacity: 0 }}
               >
-                <FaInstagram className="text-2xl text-amber-700" />
+                <FaInstagram className="text-2xl text-[#cf240a]" />
                 <span>Instagram</span>
               </a>
 
               <a
                 href="https://facebook.com/tastebox"
-                className="social-link bg-amber-50 hover:bg-amber-200 text-amber-900 p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
+                className="social-link bg-amber-50 hover:bg-amber-200 text-[#cf240a] p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ opacity: 0 }}
               >
-                <FaFacebook className="text-2xl text-amber-700" />
+                <FaFacebook className="text-2xl text-[#cf240a]" />
                 <span>Facebook</span>
               </a>
 
               <a
                 href="https://twitter.com/tastebox"
-                className="social-link bg-amber-50 hover:bg-amber-200 text-amber-900 p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
+                className="social-link bg-amber-50 hover:bg-amber-200 text-[#cf240a] p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ opacity: 0 }}
               >
-                <FaTwitter className="text-2xl text-amber-700" />
+                <FaTwitter className="text-2xl text-[#cf240a]" />
                 <span>Twitter</span>
               </a>
 
               <a
                 href="https://wa.me/919110697312"
-                className="social-link bg-amber-50 hover:bg-amber-200 text-amber-900 p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
+                className="social-link bg-amber-50 hover:bg-amber-200 text-[#cf240a] p-4 rounded-lg flex items-center gap-3 transition-colors border border-amber-200 shadow-md hover:shadow-lg"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ opacity: 0 }}
               >
-                <FaWhatsapp className="text-2xl text-amber-700" />
+                <FaWhatsapp className="text-2xl text-[#cf240a]" />
                 <span>WhatsApp</span>
               </a>
             </div>
@@ -221,14 +221,14 @@ export default function ContactUs() {
           <div className="section-animate bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300 lg:col-span-2">
             <div className="flex items-center mb-6">
               <FaMapMarkerAlt className="text-3xl text-amber-700 mr-4" />
-              <h3 className="text-2xl font-bold text-amber-800">Address</h3>
+              <h3 className="text-2xl font-bold text-[#cf240a]">Address</h3>
             </div>
             
             <div className="contact-item">
-              <p className="text-lg text-gray-700 mb-2">
+              <p className="text-lg text-black mb-2">
                 <strong>Taste Box The Flavour of Home</strong>
               </p>
-              <p className="text-gray-600">
+              <p className="text-black">
                 #1552, Opp SKP Temple, Bazar Street, Nanjungud, Mysuru
                 dist, Karnataka-571301
               </p>
@@ -239,11 +239,11 @@ export default function ContactUs() {
           <div className="section-animate bg-white rounded-2xl p-8 shadow-xl border  hover:shadow-2xl transition-shadow duration-300 lg:col-span-2">
             <div className="flex items-center mb-4">
               <FaBuilding className="text-3xl text-amber-700 mr-4" />
-              <h3 className="text-2xl font-bold text-amber-800">Manufacturing & Packing</h3>
+              <h3 className="text-2xl font-bold text-[#cf240a]">Manufacturing & Packing</h3>
             </div>
             
             <div className="contact-item">
-              <p className="text-lg text-amber-900">
+              <p className="text-lg text-black">
                 <strong>Mfg & Pkd by:</strong> Sri Lakshmi Venkateshwara Food Products, Mysuru.
               </p>
             </div>

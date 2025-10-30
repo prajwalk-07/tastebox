@@ -78,7 +78,7 @@ export default function WhyTasteBox() {
       <div className="max-w-8xl mx-auto">
         {/* Title - Centered on mobile, left-aligned on desktop */}
         <h1
-          className="gallery-title text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left bg-yellow-500 w-fit flex justify-center mx-auto lg:mx-auto px-3 sm:px-4 py-2 rounded-sm text-[#cf240a] mb-6 sm:mb-8 md:mb-10"
+          className="gallery-title text-2xl sm:text-3xl md:text-4xl font-bold text-center lg:text-left  w-fit flex justify-center mx-auto lg:mx-auto px-3 sm:px-4 py-2 rounded-sm text-[#fec208] mb-6 sm:mb-8 md:mb-10 lg:text-5xl"
           style={{ opacity: 0 }}
         >
           WHY TASTE BOX
@@ -92,12 +92,12 @@ export default function WhyTasteBox() {
               className="gallery-description text-sm sm:text-base md:text-lg lg:text-xl text-white text-center lg:text-center leading-relaxed "
               style={{ opacity: 0 }}
             >
-              The heart of every Taste Box meal is our commitment to time-honoured recipes.
+              &quot;The heart of every Taste Box meal is our commitment to time-honoured recipes.
               We don&apos;t take shortcuts. Each spice blend is traditionally roasted and ground in
               small batches to unlock its true aroma and depth, capturing the flavour that
               reminds you of a home&apos;s cooking. It&apos;s this dedication to the authentic process that
               makes our meals taste genuinely homemade, bringing the true &apos;Flavour of Home&apos; to
-              your table in minutes
+              your table in minutes&quot;
             </p>
           </div>
 

@@ -34,7 +34,7 @@ export default function Awards() {
           {/* Text Content */}
           <div className="space-y-6">
             <div className="bg-amber-50 rounded-xl p-6 border border-amber-200">
-              <h2 className="text-2xl font-bold text-amber-900 mb-4">
+              <h2 className="text-2xl font-bold text-[#cf240a] mb-4">
                 Excellence in Best Taste Award
               </h2>
               <p className="text-lg text-gray-800 mb-2">

@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function ProductCard({ product }) {
   // Expect: product.image (ready dish) and product.packetImage (packet photo)
-  const images = [product.image, product.packetImage || product.image];
+  const images = [product.packetImage, product.image || product.packetImage];
   const [active, setActive] = useState(0);
   const imgWrapRef = useRef(null);
   const startXRef = useRef(null);
@@ -42,7 +42,7 @@ function ProductCard({ product }) {
   };
 
   return (
-    <div className="product-card bg-amber-800 rounded-xl overflow-hidden shadow-lg border-2 border-amber-600 transition-all duration-300 opacity-0 ">
+    <div className="product-card bg-[#0A2E50] rounded-xl overflow-hidden shadow-lg  transition-all duration-300 opacity-0 ">
       <div
         className="relative h-80 w-full select-none"
         onTouchStart={onTouchStart}
@@ -60,14 +60,14 @@ function ProductCard({ product }) {
         </div>
       </div>
 
-      <div className="flex items-center justify-center gap-3 py-3 bg-amber-800">
+      <div className="flex items-center justify-center gap-3 py-3 bg-[#0A2E50]">
         {images.map((_, idx) => (
           <button
             key={idx}
             onClick={() => setActive(idx)}
             aria-label={`Show image ${idx + 1}`}
             className={`h-3 w-3 rounded-full transition-all duration-200 ${
-              active === idx ? "bg-amber-600 scale-110" : "bg-amber-300 hover:bg-amber-400"
+              active === idx ? "bg-amber-300 scale-110" : "bg-white hover:bg-amber-400"
             }`}
           />
         ))}
@@ -167,10 +167,10 @@ export default function OurProductsPage() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="products-title text-4xl md:text-6xl font-bold text-white mb-6">
-            OUR <span className="text-amber-200">PRODUCTS</span>
+          <h1 className="products-title text-4xl md:text-6xl font-bold text-black mb-6">
+            OUR PRODUCTS
           </h1>
-          <p className="products-description text-lg md:text-xl text-white max-w-3xl mx-auto leading-relaxed">
+          <p className="products-description text-lg md:text-xl text-[#cf240a] max-w-3xl mx-auto leading-relaxed">
             Discover our range of authentic South Indian instant mixes, crafted with traditional recipes and modern convenience.
           </p>
         </div>
